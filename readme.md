@@ -10,7 +10,7 @@ Un proyecto ecommerce creado para solucionar y mejorar las ventas de los san and
     Sofware requerido
     Lenguajes usados
 
-## 1. PLANTEAMIENTO de problema
+## 1. PLANTEAMIENTO DEL PROBLEMA
 Existe un problema recurrente a la hora de visitar estás plazas de comercio popular, la gran cantidad de opciones pueden abrumar a los consumidores,  así mismo, llevar a compras impulsivas y arrepentirse al encontrar el mismo producto con una mejor calidad o mejor precio. Incluso, no pueden encontrar los productos que buscan al no saber dónde buscar. 
 
 ## 2. ALCANCE
@@ -20,7 +20,7 @@ Siendo nuestro principal publico a alcanzar, las personas que generalmente no ac
 ## 3. JUSTIFICACION
 Un ecommerce proporcionaría una plataforma en línea donde los vendedores puedan listar sus productos y los compradores puedan buscar y comprar los productos de manera más rápida y eficiente.
 
-### 4. OBJETIVOS GENERAL
+### 4. OBJETIVO GENERAL
 Desarrollar una aplicación y/o web para dar un enfoque digital a las plazas comerciales populares de Bogotá, con el fin de ayudar al pequeño y mediano emprendedor a que su negocio alcance una visibilidad ante un publico diferente.
 
 ### 5. OBJETIVOS ESPECIFICOS
@@ -28,7 +28,7 @@ Desarrollar una aplicación y/o web para dar un enfoque digital a las plazas com
 - Especificar qué productos exactamente se pueden encontrar en dichas plazas comerciales.
 - Expandir este mercado a otro publico.
 
-## 6. Sofware requerido 
+## 6. SOFTWARES REQUERIDOS
 - Editor de codigo(Visual Studio)
 - Xampp(Apache, Mysql)
 
