@@ -1,0 +1,48 @@
+#mapas {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 100px;
+    display: flex;
+}
+
+#mapas a {
+    text-align: center;
+    width: 300px;
+    background-color: #F9CE3A;
+    padding: 5px;
+    border-radius: 0.5em;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#mapas a:hover {
+    background-color: #fae5a0;
+}
+
+.mapa {
+    position: absolute;
+    padding: 5px 20px;
+    border-radius: 0.7em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mapa i {
+    background-color: #CA1214;
+    padding: 5px;
+    color: #F9CE3A;
+    cursor: pointer;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mapa iframe {
+    background-color: #CA1214;
+    padding: 10px;
+    border-radius: 0.3em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,634 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Want Coffe';
+    src: url('../resources/WantCoffee.ttf') format('truetype');
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > div {
+    flex: 1;
+    
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70px;
+    background-color: #CA1214;
+}
+
+.searchBar {
+    margin: auto 0;
+    margin-left: 15px;
+    display: inline-block;
+    grid-column: span 1;
+}
+
+#sansitoMaps {
+    margin: auto 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-family:'Want Coffe', sans-serif;
+    color: #F9CE3A;
+    grid-column: span 1;
+    text-decoration: none;
+}
+
+#userAccess {
+    margin: auto 0;
+    width: 70px;
+    height: 70px;
+    background: none;
+    justify-self: end;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+#searchText {
+    padding: 5px;
+    height: 30px;
+    border: none;
+    background-color: #b30f12;
+    border-radius: 0.5em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#searchText::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+.searchBar > button {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background: none;
+    justify-self: end;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.searchBar > button > i {
+    font-size: 18px;
+}
+
+.buttons > button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 0.5em;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttons {
+    margin-left: 50px;
+    height: 30px;
+    margin: auto 0;
+    margin-right: 20px;
+    justify-self: right;
+}
+
+#bLog {
+    background-color: #F9CE3A;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#bLog:hover {
+    background-color: #e4bc3a;
+}
+
+#bReg {
+    background-color: #2F2F35;
+    color: white;
+    width: 130px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#bReg:hover {
+    background-color: #494952;
+}
+
+#user_panel {
+    margin: auto 0;
+    /*width: 100px;    CONSULTAR header.php, está ADJUNTO a un condicional*/ 
+    margin-right: 10px;
+    justify-self: right;
+    display: flex;
+    align-items: center;
+}
+
+#user_panel > div > button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    transition: .5s;
+    cursor: pointer;
+    color: #ebc035;
+}
+
+#user_panel > div > button:hover {
+    color: #F9CE3A;
+}
+
+#user__panel__icon {
+    width: 40px;
+    display: inline-block;
+}
+
+#ulCont {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+#user_panel li {
+    list-style: none;
+    margin: 0;
+    background-color: #b30f12;
+}
+
+#user_panel li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#user_panel li a:hover {
+    color: #F9CE3A;
+    font-size: 15px;
+}
+
+#userButton{
+    background-color: #b30f12;
+    border: none;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#userButton:hover {
+    color: #F9CE3A;
+    font-size: 15px;
+}
+
+#user_panel input {
+    appearance: none;
+}
+
+#usericon {
+    font-size: 35px;
+    color: #F9CE3A;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#user_panel input:checked ~ #usericon {
+    color: #f0c22b;
+}
+
+#user_panel input:checked ~ #ulCont {
+    display: block;
+}
+
+#user_panel input:hover {
+    color: #F9CE3A;
+}
+
+#cartIcon {
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#cartIcon a {
+    text-decoration: none;
+    color: white;
+}
+
+#cartIcon p{
+    display: inline-block;
+    animation: anim1 .5s;
+}
+
+#cartIcon i {
+    animation: anim1 .5s;
+}
+
+@keyframes anim1 {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#log_cont {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#login {
+    display: none;
+    width: 350px;
+    height: 220px;
+    border-radius: 0.5em;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    margin: -25px 0 0 -25px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+#login h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#login input {
+    border-radius: 0.3em;
+    border: solid 2px gainsboro;
+    padding: 5px;
+    width: 100%;
+    margin: 3px 0;
+}
+
+#login div {
+    width: calc(90px * 2);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#login button {
+    cursor: pointer;
+    width: 80px;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1 );
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+#login__submit {
+    background-color: #F9CE3A;
+}
+
+#login__submit:hover {
+    background-color: #e9bf36;
+}
+
+#register {
+    display: none;
+    width: 350px;
+    height: 350px;
+    border-radius: 0.5em;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    margin: -25px 0 0 -25px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+#register h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#register input {
+    border-radius: 0.3em;
+    border: solid 2px gainsboro;
+    padding: 5px;
+    width: 100%;
+    margin: 3px 0;
+}
+
+#register div {
+    width: calc(90px * 2);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#register button {
+    cursor: pointer;
+    width: 80px;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1 );
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+#register__submit {
+    background-color: #F9CE3A;
+}
+
+#register__submit:hover {
+    background-color: #e9bf36;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color:  #2F2F35;
+    font-family: sans-serif;
+    color: white;
+}
+
+footer > div {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-top: 50px;
+}
+
+#footer__content > p {
+    font-size: 25px;
+}
+
+#footer__content {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer i {
+    padding-right: 5px;
+}
+
+footer img {
+    display: inline-block;
+}
+
+.footer_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#sop_mail {
+    width: 220px;
+}
+
+#sop_tel {
+    width: 110px;
+}
+
+#admin {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+#admin input {
+    display: none;
+}
+
+#admin input:checked ~ #admin__options {
+    display: block;
+}
+
+#admin > label {
+    cursor: pointer;
+    font-size: 25px;
+    background-color: #1b1b1f;
+    padding: 10px;
+    border-radius: 0.2em;
+    color: gray;
+}
+
+#admin > label > i {
+    margin: 0 5px;
+}
+
+#admin__options {
+    display: none;
+    color: white;
+    background-color: #1b1b1f;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    border-radius: 0.5em;
+    left: -160px;
+    top: -100px;
+}
+
+#admin__options ul {
+    padding: 0;
+}
+
+#admin__options li {
+    margin: 10px 0;
+    list-style: none;
+    text-align: center;
+    
+}
+
+#admin__options li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+#admin__options li a:hover {
+    color: orange;
+    background-color: #494952;
+    border-radius: 0.5em;
+}
+
+#shopAdmin {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+#shopAdmin input {
+    display: none;
+}
+
+#shopAdmin label {
+    background-color: #F9CE3A;
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#shopAdmin label:hover {
+    color: #b30f12;
+}
+
+#shopIcon:checked ~ #shopOpciones {
+    display: block;
+}
+
+#shopOpciones {
+    display: none;
+    position: fixed;
+    right: 90px;
+    list-style: none;
+    padding: 0;
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color: #F9CE3A;
+    bottom: 50px;
+}
+
+#shopOpciones a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+}
+
+#shopOpciones a:hover {
+    color: #b30f12;
+}
+
+
+#tiendaReg {
+    color: #b30f12;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#tiendaReg:hover {
+    color: white;
+}
+
+#regTienda {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.5);
+}
+
+#regTienda form {
+    padding: 15px;
+    border-radius: 0.5em;
+    background-color: white;
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+#regTienda input {
+    padding: 5px;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+#regTienda h3 {
+    text-align: center;
+}
+
+#regTienda input::placeholder {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#regTienda textarea {
+    width: 100%;
+    min-height: 60px;
+}
+
+#regTienda textarea::placeholder {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#regTienda button {
+    padding: 0;
+    border: none;
+    background-color: none;
+}
+
+.regTiendaButton {
+    background-color: #494952;
+    color: white;
+    border-radius: 0.3em;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    font-size: 17px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .2s;
+}
+
+.regTiendaButton:hover {
+    background-color: #2F2F35;
+}
+#buttonsTienda {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 300px;
+}
+
+footer span {
+    transition: .2s;
+}
+
+footer span:hover {
+    cursor: pointer;
+    color: #b30f12;
+}

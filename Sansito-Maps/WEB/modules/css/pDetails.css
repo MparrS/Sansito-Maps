@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#product__container {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    width: 1100px;
+    height: 440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#product__images {
+    display: grid;
+    grid-template-columns: 80px 400px;
+    grid-template-rows: repeat(3, 80px);
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.image__container {
+    background-color: black;
+    cursor: pointer;
+    grid-column: 1/2;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.product__image {
+    margin: -1px 0 0 -1px;
+    width: 78px;
+    height: 78px;
+    transition: opacity 0.3s ease;
+}
+.product__image:hover {
+    opacity: 0.5;
+}
+
+
+.product__mainImage {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#product__image3 {
+    grid-row: 2/3;
+}
+
+#product__attributes {
+    height: 400px;
+    margin: 20px;
+}
+
+.rating {
+    display: inline-block;
+    height: 1.5rem;
+}
+
+#rating__number {
+    display: inline-block;
+}
+  
+.rating input {
+    display: none;
+}
+  
+.rating label {
+    height: 1.2rem;
+    float: right;
+    cursor: pointer;
+    color: grey;
+}
+  
+.rating label:before {
+    content: "\2605";
+    font-size: 1.2rem;
+}
+  
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label {
+    color: gold;
+}
+
+.rating div {
+    display: inline-block;
+}
+
+#product__stock {
+    margin-top: 0.5rem;
+}
+
+.product__stock__item {
+    display: inline-block;
+}
+
+#product__name{
+    font-size: 2rem;
+}
+
+#product__description {
+    font-size: 1.2rem;
+}
+
+#product__price {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#product__buttons {
+    margin-top: 1.5rem;
+}
+
+#product__buttons button {
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0.5rem;
+    border-radius: 0.3em;
+    border: none;
+    background-color: #494952;
+    transition: 0.5s;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#product__buttons button:hover {
+    background-color: #60606b;
+}
+
+#comentario {
+    display: none;
+    position: absolute;
+    top: 190px;
+    right: 600px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 0.2em;
+    text-align: center;
+    border: solid 2px gray;
+}
+
+#comentario textarea{
+    display: block;
+}
+
+#comentario button {
+    margin-top: 5px;
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3em;
+    border: none;
+    background-color: #494952;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+#comentario button:hover {
+    background-color: #60606b;
+}
+
+.comentario__usuario {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 15px auto;
+    width: 800px;
+    display: block;
+    background-color: whitesmoke;
+}
+
+.comentario__usuario h4 {
+    color: #CA1214;
+    display: inline-block;
+}
+
+.comentario__usuario span {
+    margin-left: 10px;
+    background-color: #f02024;
+    border-radius: 0.3em;
+    padding: 0 4px;
+}

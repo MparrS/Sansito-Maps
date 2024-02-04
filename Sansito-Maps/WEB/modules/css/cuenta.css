@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+#main__exampleTxt{
+    text-align: center;
+    padding: 10px;
+}
+
+.btns__ulStyle{
+    padding: 0;
+    list-style: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.btns__style{
+    padding: 10px 20px;
+    margin-left: 5px;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+
+.btns__style:hover {
+    font-size: 18px;
+    background-color: gainsboro;
+}
+.btns__style__link{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    width: 100px;
+}
+
+.link__container{
+    width: 200px;
+}
+
+.link__container i {
+    font-size: 25px;
+    text-align: center;
+    width: 60px;
+}
+
+.btns__img{
+    font-size:30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.btns__text{
+    margin-left: 10px;
+}
+
+.button-subText{
+    color: #606060;
+    text-transform: uppercase;
+    padding-left: 100px;
+    display: inline-block;
+}
+
+.button-subText-num{
+    padding: initial;
+}
+
+.container-button{
+    width: 300px;
+    border: none; 
+    background-color: transparent; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    font: inherit;
+    color: inherit
+}
+
+
+.form-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.container__name{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    top: 50px;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(20, 20, 20, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+}
+
+#btn__nombre{
+    width: 700px;
+    height: auto;
+}
+
+#form__nombre{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+#container__number{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    top: 50px;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(20, 20, 20, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+}
+
+#btn__numContact{
+    width: 700px;
+}
+
+#form__numContact{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+#container__email{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    top: 50px;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(20, 20, 20, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+}
+
+#btn__email{
+    width: 700px;
+}
+
+#form__email{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    display: flex;
+    
+}
+
+.form-btn{
+    width: 120px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 7px;
+}
+
+#btn-nom{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+#btn-num{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+#btn-email{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-cerrar-nom{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-cerrar-num{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-cerrar-email{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#button-text{
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+}
+
+.btn-form{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.container__passw{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    top: 50px;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(20, 20, 20, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+}
+
+#btn__passw{
+    width: 700px;
+    height: auto;
+}
+
+#form__passw{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+.container__id{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    top: 50px;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(20, 20, 20, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+}
+
+#btn__id{
+    width: 700px;
+    height: auto;
+}
+
+#form__id{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+
+#btn-passw{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-cerrar-passw{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+#btn-cerrar-id{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#input__idSecurity{
+    cursor: default;
+}
+
+#myAccount {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.5);;
+}
+
+.main__btns{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    padding: 30px;
+    border-radius: 17px;
+    width: 510px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+#main__secu{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.5);
+}
+
+.secu-container{
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 800px;
+    padding: 20px;
+}
+
+#main__datos {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.5);
+}
+
+#datos-container{
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 800px;
+    padding: 20px;
+}
+
+#datos-container > div {
+    transition: 0.5s;
+}
+
+#datos-container > div:hover {
+    font-size: 18px;
+}
+
+.boton__cerrar {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 0.6em;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+}
