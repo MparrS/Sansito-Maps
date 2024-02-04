@@ -28,5 +28,5 @@ Desarrollar una aplicación y/o web para dar un enfoque digital a las plazas com
 - Expandir este mercado a otro publico.
 
 ## 6. SOFTWARES REQUERIDOS
-- Editor de codigo(Visual Studio)
-- Xampp(Apache, Mysql)
+- Editor de codigo (Visual Studio)
+- Xampp (Apache, Mysql)
