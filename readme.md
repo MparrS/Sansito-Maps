@@ -8,7 +8,6 @@ Un proyecto ecommerce creado para solucionar y mejorar las ventas de los san and
     Objetivo general
     Objetivo especifico
     Sofware requerido
-    Lenguajes usados
 
 ## 1. PLANTEAMIENTO de problema
 Existe un problema recurrente a la hora de visitar estás plazas de comercio popular, la gran cantidad de opciones pueden abrumar a los consumidores,  así mismo, llevar a compras impulsivas y arrepentirse al encontrar el mismo producto con una mejor calidad o mejor precio. Incluso, no pueden encontrar los productos que buscan al no saber dónde buscar. 
@@ -31,9 +30,3 @@ Desarrollar una aplicación y/o web para dar un enfoque digital a las plazas com
 ## 6. Sofware requerido 
 - Editor de codigo(Visual Studio)
 - Xampp(Apache, Mysql)
-
-## 7. Lenguajes usados
-- Php
-- Html
-- CSS
-- javascript
